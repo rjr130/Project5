@@ -1,0 +1,14 @@
+<%= form_for(@account) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+      <%= f.label :host %>
+      <%= f.text_field :host %>
+
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+  </div>
+  <%= f.submit "Add", class: "btn btn-large btn-primary" %>
+<% end %>

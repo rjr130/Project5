@@ -8,4 +8,13 @@
       </h1>
     </section>
   </aside>
+  <div class="span8">
+    <button class="add-account btn btn-large btn-primary"><a href="/">Add Account</a></button>
+    <% if current_user.accounts.any? %>
+      <h3>Accounts (<%= current_user.accounts.count %>)</h3>
+      <ol class="accounts">
+        <%= render current_user.accounts %>
+      </ol>
+    <% end %>
+  </div>
 </div>

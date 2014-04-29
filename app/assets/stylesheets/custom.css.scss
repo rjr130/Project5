@@ -180,3 +180,63 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
+/* accounts */
+
+.accounts {
+  height:100px;
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    height:120px;
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.host, .username, .password{
+  display: block;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+.add-account{
+  height: 40px;
+}
+
+.add-account a, .account-update a, .account-delete a{
+  display:block;
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.add-account a:hover, .account-update a:hover, .account-delete a:hover{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.account-update, .account-delete{
+  width:70px;
+}
+
+.account-detail{
+  height:100px;
+  width:200px;
+  float:left
+}
+
+.account-btns{
+  height:100px;
+  width:100px;
+  float:right;
+}

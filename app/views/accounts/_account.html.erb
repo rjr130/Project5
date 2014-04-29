@@ -1,0 +1,11 @@
+<li>
+	<div class="account-detail">
+	    <span class="host">Host: <%= account.host %></span>
+	    <span class="username">Username: <%= account.username %></span>
+	    <span class="password">Password: <%= account.password %></span>
+	</div>
+  	<div class="account-btns span6">
+  		<button class="account-update btn btn-info"><%= link_to 'Edit', edit_account_path(account.id) %></button>
+  		<button class="account-delete btn btn-danger"><%= link_to 'Delete', account, method: :delete, data: {confirm: 'Are you sure' } %></button>
+  	</div>
+</li>
