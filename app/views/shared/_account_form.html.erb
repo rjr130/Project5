@@ -9,6 +9,9 @@
 
       <%= f.label :password %>
       <%= f.password_field :password %>
+
+      <%= f.label :category %>
+      <%= f.select(:category, options_for_select(Category.all.map{|category| [category.name]})) %>
   </div>
   <%= f.submit "Add", class: "btn btn-large btn-primary" %>
 <% end %>

@@ -3,6 +3,7 @@
 	    <span class="host">Host: <%= account.host %></span>
 	    <span class="username">Username: <%= account.username %></span>
 	    <span class="password">Password: <%= account.password %></span>
+	    <span class="password">Category: <%= account.category %></span>
 	</div>
   	<div class="account-btns span6">
   		<button class="account-update btn btn-info"><%= link_to 'Edit', edit_account_path(account.id) %></button>
