@@ -15,3 +15,10 @@
   </div>
   <%= f.submit "Add", class: "btn btn-large btn-primary" %>
 <% end %>
+<%= form_for(Category.new) do |ff| %>
+  <div class="field">
+    <%= ff.label "New Category" %>
+    <%= ff.text_field :name %>
+  </div>
+  <%= ff.submit "Add Category", class: "btn btn-primary" %>
+<% end %>

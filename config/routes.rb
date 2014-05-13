@@ -1,4 +1,5 @@
 Project5::Application.routes.draw do
+  resources :categories, only: [:create]
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :accounts, only: [:update, :edit, :create, :destroy]
