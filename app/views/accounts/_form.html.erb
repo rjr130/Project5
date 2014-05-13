@@ -12,13 +12,6 @@
 
       <%= f.label :category %>
       <%= f.select(:category, options_for_select(Category.all.map{|category| [category.name]}, @account.category)) %>
-      <%= form_for(@category) do |ff| %>
-        <div class="field">
-          <%= f.label :name %>
-          <%= f.text_field :name %>
-        </div>
-        <%= ff.submit "Add Category", class: "btn btn-large btn-primary" %>
-      <% end %>
   </div>
   <%= f.submit "Update", class: "btn btn-large btn-primary" %>
 <% end %>
